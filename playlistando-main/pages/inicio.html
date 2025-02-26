@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerar Playlist</title>
+    <link rel="stylesheet" href="css/inicio.css">
+
+</head>
+<body>
+    <header>
+        <button id="accessSpotify">🎵 Acessar Spotify</button>
+        <h1 id="welcomeMessage">Bem-vindo!</h1>
+        <button id="logout">Sair</button>
+    </header>
+
+    <div class="container">
+        <h2>Me diga como quer sua playlist</h2>
+        <textarea id="prompt" placeholder="Exemplo: Playlist relaxante com músicas de jazz e lo-fi."></textarea>
+        <button id="generatePlaylist">Criar Playlist</button>
+
+        <div id="playlist-container"></div>
+
+        <h3>Histórico de Playlists</h3>
+        <ul id="playlist-history"></ul>
+    </div>
+
+    <script type="module" src="/playlistando-main/js/inicio.js"></script>
+</body>
+</html>

@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #121212;
+    color: #B3B3B3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.container {
+    text-align: center;
+    max-width: 400px;
+    width: 100%;
+    padding: 20px;
+    margin: 0 auto;
+}
+
+.container img {
+    width: 64px; /* Reduzir tamanho */
+    height: 64px; /* Manter proporção */
+    margin-bottom: 30px;
+}
+
+.container h1 {
+    font-size: 28px;
+    margin-bottom: 5px;
+}
+
+.container p {
+    font-size: 20px;
+    margin-bottom: 40px;
+}
+
+#spotify-login {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    padding: 16px 32px;
+    min-width: 250px;
+}
+
+#spotify-login img {
+    width: 24px;
+    height: 24px;
+}
+
+#spotify-login:hover {
+    background-color: #1ed760;
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 15px;
+    }
+
+    .container h1 {
+        font-size: 20px;
+    }
+
+    .container p {
+        font-size: 16px;
+    }
+
+    #spotify-login {
+        padding: 12px 24px;
+        font-size: 14px;
+    }
+}
+    
+#spotify-login {
+    background-color: #1DB954;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 25px;
+    font-size: 16px;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: auto;
+    min-width: 200px;
+    transition: background-color 0.3s ease;
+}
+
+#spotify-login img {
+    width: 24px;
+    height: 24px;
+    margin-right: 8px;
+}
